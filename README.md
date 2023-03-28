@@ -1,11 +1,11 @@
-About hdx-python-utilities
-==========================
+About hdx-python-utilities-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdx-python-utilities-feedstock/blob/main/LICENSE.txt)
 
 Home: https://hdx-python-utilities.readthedocs.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdx-python-utilities-feedstock/blob/main/LICENSE.txt)
 
 Summary: A range of helpful utilities for Python developers including streaming
 tabular data, date parsing, JSON and YAML handling, dictionary and list
