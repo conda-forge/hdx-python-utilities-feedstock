@@ -1,13 +1,13 @@
 {% set name = "hdx-python-utilities" %}
-{% set version = "3.5.8" %}
+{% set version = "3.5.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 75092385922d025128ee118654c7be00035ecee27a67d36f14bcddf20f1a377f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c13e3a58b2e7c23fb6783e3e2eede2058f161d64af70ff10a5adfa620253bcaf
 
 build:
   noarch: python
@@ -18,11 +18,13 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - hatchling
+    - hatch-vcs
   run:
     - python >=3.8
     - beautifulsoup4
     - email_validator
-    - frictionless >=5.5.1
+    - frictionless >=5.10.1
     - html5lib
     - loguru
     - python-dateutil ==2.8.2
