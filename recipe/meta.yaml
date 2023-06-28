@@ -18,11 +18,13 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - hatchling
+    - hatch-vcs
   run:
     - python >=3.8
     - beautifulsoup4
     - email_validator
-    - frictionless >=5.5.1
+    - frictionless >=5.10.1
     - html5lib
     - loguru
     - python-dateutil ==2.8.2
