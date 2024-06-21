@@ -27,7 +27,7 @@ requirements:
     - frictionless >=5.17.0
     - html5lib
     - loguru
-    - python-dateutil ==2.9.0
+    - python-dateutil ==2.9.0post0
     - ratelimit
     - requests-file
     - ruamel.yaml
