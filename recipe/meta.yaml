@@ -31,6 +31,7 @@ requirements:
     - ratelimit
     - requests-file
     - ruamel.yaml
+    - xlsx2csv
     # from frictionless[json]
     - ijson >=3.2.3
     - jsonlines >=4.0.0
