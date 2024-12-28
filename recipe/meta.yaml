@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: d4a16b1fdd97deafe81e4a2959cab6de4374ea0ccfe76a87c4a7716283398630
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - beautifulsoup4
     - email_validator
     - frictionless >=5.18.0
@@ -46,6 +46,7 @@ test:
     - hdx.utilities
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
