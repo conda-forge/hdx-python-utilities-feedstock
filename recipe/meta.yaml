@@ -27,6 +27,7 @@ requirements:
     - frictionless >=5.18.0
     - html5lib
     - loguru
+    - pyphonetics
     - python-dateutil >=2.9.0
     - ratelimit
     - requests-file
