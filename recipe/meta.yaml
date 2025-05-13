@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - beautifulsoup4
+    - cydifflib
     - email_validator
     - frictionless >=5.18.0
     - html5lib
