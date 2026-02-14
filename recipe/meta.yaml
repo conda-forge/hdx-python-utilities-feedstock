@@ -1,5 +1,5 @@
 {% set name = "hdx-python-utilities" %}
-{% set version = "4.0.4" %}
+{% set version = "4.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 63b0d859076df4b700f5e08a22124617ff7d55b8491823f85984441d11debbf1
+  sha256: 55a95f7fe8af102ad825af4b682ea673ee2ac28c14f75e4334962c370dd960c1
 
 build:
   noarch: python
