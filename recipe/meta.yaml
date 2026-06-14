@@ -24,7 +24,7 @@ requirements:
     - python >={{ python_min }}
     - beautifulsoup4
     - email_validator
-    - frictionless >=5.18.0
+    - frictionless >=5.19.0
     - html5lib
     - loguru
     - pyphonetics
@@ -32,9 +32,9 @@ requirements:
     - ratelimit
     - requests-file
     - ruamel.yaml
-    - xlsx2csv
+    - xlsx2csv ==0.8.4
     # from frictionless[json]
-    - ijson >=3.2.3
+    - ijson >=3.5.0
     - jsonlines >=4.0.0
     # from frictionless[excel]
     - openpyxl >=3.1.2
