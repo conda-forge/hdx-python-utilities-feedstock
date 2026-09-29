@@ -28,6 +28,7 @@ requirements:
     - html5lib
     - loguru
     - pyphonetics
+    - rapidfuzz
     - python-dateutil >=2.9.0
     - ratelimit
     - requests-file
