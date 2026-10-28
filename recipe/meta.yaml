@@ -1,5 +1,5 @@
 {% set name = "hdx-python-utilities" %}
-{% set version = "4.2.5" %}
+{% set version = "4.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d1ab4af1bb87342dd68931718f8ac74d1c34d38891fb72c266630819aa4040a3
+  sha256: a4273917d6705a02732862a273a5322c65f64ee8b314f53a4aa6d7495572d6a9
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - loguru
     - pyphonetics
     - rapidfuzz
-    - python-dateutil >=2.9.0
+    - python-dateutil >=2.9.0, <3.1
     - ratelimit
     - requests-file
     - ruamel.yaml
